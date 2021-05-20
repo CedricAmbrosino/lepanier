@@ -1,0 +1,179 @@
+*{
+	margin:0px;
+	padding:0px;
+	color:#053D61;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	height:60px;
+	margin: 2% 15% 2% 15%;
+	padding-right: 5%;
+}
+
+nav a{
+	font-size: 1.2em;
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+.nav_divLogo{
+	display:flex;
+	justify-content:flex-start;
+	align-items: center;
+}
+.nav_divLogo_img{
+	width: 30px;
+	padding: 0px 15px 0px 20px;
+}
+.nav_divLogo_h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 1.8em;
+}
+
+header{
+	margin: 0% 15%;
+	position:relative;
+}
+
+.header_containerbackground{
+	width:100%;
+	overflow:hidden;
+	max-height: 300px;
+	border-radius: 5px;
+}
+
+.header_containerbackground_video{
+	min-width: 100%; 
+    min-height: 100%;
+    width: 100%; 
+    height: auto;
+}
+
+
+.header_containeraccroche{
+	position:absolute;
+	z-index:3;
+	top:0;
+	width:100%;	
+	height: 100%;	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.header_containeraccroche_h1{
+	text-align: center;
+	color:#decece;
+	font-family: 'Open sans', sans-serif;
+	font-size: 1.5em;
+	background-color: #053D61;
+	border-radius : 100px;
+	padding:15px;
+}
+
+
+.section_accroche{
+	width:70%;
+	height:200px;
+	max-height: 200px;	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin: 0% 15%;
+}
+
+.section_acroche_h1{
+	text-align:center;
+
+}
+
+.section_valeurs{
+	display:flex;
+	justify-content:space-between;	
+	text-align:center;
+	margin: 0% 15%;
+}
+.section_valeurs_container{
+	max-width: 30%;
+}
+
+.section_valeurs_container_image{
+	width:100%;
+	border-radius: 5px;
+	
+}
+.section_valeurs_container_titre{
+	margin: 15px 0px;
+}
+
+.section_valeurs_container_paragraphe{
+	box-sizing: border-box;
+	margin:15px 0px;
+	padding: 0px 15px;
+}
+
+@media screen and (max-width: 900px) {
+	.section_valeurs{
+		flex-direction: column;
+		
+	}
+	.section_valeurs_container{
+		min-width: 100%;
+	}
+	
+	nav{
+		flex-wrap: wrap;
+		margin-bottom:4 px;
+		justify-content:space-between;
+		height:auto;
+		padding: 0px;
+	}
+	
+	nav span{
+		width: 50%;
+	}
+	
+	nav span a{
+		display: inline-block;
+		width: 100%;
+		text-align:center;
+	}
+	
+	.nav_divLogo{
+		width:100%;
+		justify-content:center;
+	}
+	
+	.nav_divLogo_h1{
+		padding-right:10%;
+	}
+	
+
+	.header_containeraccroche_h1{
+		font-size: 1.2em;
+		padding:5px;
+	}
+
+}
+
+@media screen and (max-width: 300px) {
+	.header_containeraccroche{
+		position: static;
+		margin-top: 20px;
+	}
+}
+
+
